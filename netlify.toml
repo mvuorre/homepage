@@ -113,6 +113,6 @@
 
 # Every other post  
 [[redirects]]
-  from = "/post"
+  from = "/post/*"
   to = "https://mvuorre.github.io/"
   force = true
