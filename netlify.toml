@@ -77,6 +77,11 @@
   force = true
 
 [[redirects]]
+  from = "post/2017/how-to-compare-two-groups-with-robust-bayesian-estimation-using-r-stan-and-brms/"
+  to = "https://mvuorre.github.io/posts/2017-01-02-how-to-compare-two-groups-with-robust-bayesian-estimation-using-r-stan-and-brms/"
+  force = true
+
+[[redirects]]
   from = "post/2016/12/06/how-to-arrange-ggplot2-panel-plots/"
   to = "https://mvuorre.github.io/posts/2016-12-06-order-ggplot-panel-plots/"
   force = true
@@ -105,4 +110,9 @@
   from = "post/2016/03/06/multilevel-confidence/"
   to = "https://mvuorre.github.io/posts/2016-03-06-multilevel-predictions/"
   force = true
-  
+
+# Every other post  
+[[redirects]]
+  from = "/post"
+  to = "https://mvuorre.github.io/"
+  force = true
