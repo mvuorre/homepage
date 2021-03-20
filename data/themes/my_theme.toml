@@ -1,0 +1,22 @@
+# Theme metadata
+name = "my_theme"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "rgb(21, 101, 192)"
+
+# Menu
+menu_primary = "rgb(34, 34, 34)"
+menu_text = "rgba(255, 255, 255, 1)"
+menu_text_active = "rgb(52, 165, 218)"
+menu_title = "rgba(255, 255, 255, 1)"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgba(34, 34, 34, .05)"
+
+[dark]
+  link = "#bbdefb"
+  link_hover = "#bbdefb"

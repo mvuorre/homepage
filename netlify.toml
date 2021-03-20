@@ -1,0 +1,108 @@
+[build]
+  command = "hugo --gc --minify -b $URL"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.78.2"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+  [plugins.inputs]
+    debug = true
+
+# Redirect old blog posts
+[[redirects]]
+  from = "post/2020/02/06/how-to-calculate-contrasts-from-a-fitted-brms-model/"
+  to = "https://mvuorre.github.io/posts/2020-02-06-how-to-calculate-contrasts-from-a-fitted-brms-model/"
+  force = true
+
+[[redirects]]
+  from = "post/2019/02/18/analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/"
+  to = "https://mvuorre.github.io/posts/2019-02-18-analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/"
+  force = true
+ 
+[[redirects]]
+  from = "post/2018/12/13/rpihkal-combine-ggplots-with-patchwork/"
+  to = "https://mvuorre.github.io/posts/2018-12-13-rpihkal-combine-ggplots-with-patchwork/"
+  force = true
+  
+[[redirects]]
+  from = "post/2018/12/12/rpihkal-stop-pasting-and-start-gluing/"
+  to = "https://mvuorre.github.io/posts/2018-12-12-rpihkal-stop-pasting-and-start-gluing/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/10/30/bayesian-estimation-of-signal-detection-theory-models-part-4/"
+  to = "https://mvuorre.github.io/posts/2017-10-09-bayesian-estimation-of-signal-detection-theory-models/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/10/16/bayesian-estimation-of-signal-detection-theory-models-part-3/"
+  to = "https://mvuorre.github.io/posts/2017-10-09-bayesian-estimation-of-signal-detection-theory-models/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/10/12/bayesian-estimation-of-signal-detection-theory-models-part-2/"
+  to = "https://mvuorre.github.io/posts/2017-10-09-bayesian-estimation-of-signal-detection-theory-models/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/10/09/bayesian-estimation-of-signal-detection-theory-models-part-1/"
+  to = "https://mvuorre.github.io/posts/2017-10-09-bayesian-estimation-of-signal-detection-theory-models/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/03/21/bayes-factors-with-brms/"
+  to = "https://mvuorre.github.io/posts/2017-03-21-bayes-factors-with-brms/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/01/04/how-to-create-within-subject-scatter-plots-in-r-with-ggplot2/"
+  to = "https://mvuorre.github.io/posts/2017-01-04-within-subject-scatter/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/01/02/how-to-compare-two-groups-with-robust-bayesian-estimation-using-r-stan-and-brms/"
+  to = "https://mvuorre.github.io/posts/2017-01-02-how-to-compare-two-groups-with-robust-bayesian-estimation-using-r-stan-and-brms/"
+  force = true
+
+[[redirects]]
+  from = "post/2016/12/06/how-to-arrange-ggplot2-panel-plots/"
+  to = "https://mvuorre.github.io/posts/2016-12-06-order-ggplot-panel-plots/"
+  force = true
+
+[[redirects]]
+  from = "post/2017/01/19/better-forest-plots-from-meta-analytic-models-estimated-with-brms/"
+  to = "https://mvuorre.github.io/posts/2016-09-29-bayesian-meta-analysis/"
+  force = true
+
+[[redirects]]
+  from = "post/2016/09/29/meta-analysis-is-a-special-case-of-bayesian-multilevel-modeling/"
+  to = "https://mvuorre.github.io/posts/2016-09-29-bayesian-meta-analysis/"
+  force = true
+
+[[redirects]]
+  from = "post/2016/03/24/github-style-waffle-plots-in-r/"
+  to = "https://mvuorre.github.io/posts/2016-03-24-github-waffle-plot/"
+  force = true
+
+[[redirects]]
+  from = "post/2016/03/15/plots-with-subplots-in-r/"
+  to = "https://mvuorre.github.io/posts/2016-03-15-ggplot-plots-subplots/"
+  force = true
+
+[[redirects]]
+  from = "post/2016/03/06/multilevel-confidence/"
+  to = "https://mvuorre.github.io/posts/2016-03-06-multilevel-predictions/"
+  force = true
+  

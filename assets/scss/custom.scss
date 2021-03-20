@@ -1,0 +1,13 @@
+.navbar {
+    height: 60px;
+    font-size: 16px;
+    border-bottom: 4px solid #34A5DA;
+    webkit-box-shadow: 1px 1px 8px #4d4d4d;
+    moz-box-shadow: 1px 1px 8px #4d4d4d;
+    box-shadow: 1px 1px 8px #4d4d4d;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  font-weight: normal !important;
+  color: #34a5da !important;
+}
